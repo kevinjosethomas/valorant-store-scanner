@@ -1,0 +1,12 @@
+{
+  "name": "valorant-store-scanner",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/api"
+  ],
+  "scripts": {},
+  "description": "📦 Access your VALORANT store without launching your game!",
+  "repository": "https://github.com/trustedmercury/valorant-store-scanner.git",
+  "author": "Kevin Thomas <kevin.jt2007@gmail.com>"
+}
