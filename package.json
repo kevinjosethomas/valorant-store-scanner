@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "workspaces": [
-    "packages/api"
+    "packages/api",
+    "packages/web"
   ],
   "scripts": {},
   "description": "📦 Access your VALORANT store without launching your game!",
