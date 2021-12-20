@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "DM Sans", sans-serif;
+}
+
+@font-face {
+  font-family: "VALORANT";
+  src: url("/fonts/VALORANT.ttf");
+}
+
+.root {
+  background: url("/backgrounds/1.jpg") center/cover;
+}
+
+.font-valorant {
+  font-family: "VALORANT", sans-serif;
+}

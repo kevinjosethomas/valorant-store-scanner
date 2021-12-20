@@ -6,7 +6,10 @@
     "packages/api",
     "packages/web"
   ],
-  "scripts": {},
+  "scripts": {
+    "dev:a": "yarn workspace api dev",
+    "dev:w": "yarn workspace web dev"
+  },
   "description": "📦 Access your VALORANT store without launching your game!",
   "repository": "https://github.com/trustedmercury/valorant-store-scanner.git",
   "author": "Kevin Thomas <kevin.jt2007@gmail.com>"
