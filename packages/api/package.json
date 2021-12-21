@@ -2,7 +2,10 @@
   "name": "api",
   "private": true,
   "version": "1.0.0",
-  "scripts": {},
+  "scripts": {
+    "dev": "nodemon src/app.js",
+    "start": "node src/app.js"
+  },
   "dependencies": {
     "axios": "^0.24.0",
     "dotenv": "^10.0.0",
@@ -13,5 +16,7 @@
     "fastify-postgres": "^3.6.0",
     "fastify-static": "^4.5.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
 }
