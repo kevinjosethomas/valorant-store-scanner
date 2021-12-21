@@ -3,7 +3,7 @@ import axios from "axios";
 const UserLoginSchema = {
   body: {
     type: "object",
-    required: ["username", "password", "region"],
+    required: ["username", "password"],
     properties: {
       username: { type: "string", minLength: 3, maxLength: 16 },
       password: { type: "string", minLenth: 8, maxLength: 128 },
