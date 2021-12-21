@@ -7,22 +7,18 @@ const UserLoginSchema = {
     properties: {
       username: { type: "string", minLength: 3, maxLength: 16 },
       password: { type: "string", minLenth: 8, maxLength: 128 },
-      region: {
-        type: "string",
-        enum: ["na", "eu", "kr", "ap"],
-      },
     },
   },
 };
 
 export default async function router(fastify) {
-  fastify.post("/user/login", { schema: { body: UserLoginSchema.body } }, async (req, res) => {
-    const { username, password, region } = req.body;
+  fastify.post("/user/login", { schema: UserLoginSchema }, async (req, res) => {
+    const { username, password } = req.body;
 
     const [session, sessionError] = await CreateLoginSession();
 
     if (sessionError) {
-      console.log(sessionError);
+      console.error(sessionError);
       return res.code(424).send({
         success: false,
         message: "Failed Dependency - Failed to create a VALORANT login session",
@@ -39,6 +35,7 @@ export default async function router(fastify) {
           message: "Unauthorized - Invalid username or password provided",
         });
       } else {
+        console.error(authError);
         return res.code(424).send({
           success: false,
           message: "Failed Dependency - Failed to login via the provided username and password",
@@ -49,6 +46,7 @@ export default async function router(fastify) {
     const [token, tokenError] = FilterAccessToken(auth);
 
     if (!token || tokenError) {
+      console.error(tokenError);
       return res.code(500).send({
         success: false,
         message: "Internal Server Error - Failed to fetch access token",
@@ -61,6 +59,7 @@ export default async function router(fastify) {
     ]);
 
     if (entitlement[1]) {
+      console.error(entitlement[1]);
       return res.code(424).send({
         success: false,
         message: "Failed Dependency - Failed to fetch entitlement token",
@@ -68,6 +67,7 @@ export default async function router(fastify) {
     }
 
     if (player[1]) {
+      console.error(player[1]);
       return res.code(424).send({
         success: false,
         message: "Failed Dependency - Failed to fetch player ID",

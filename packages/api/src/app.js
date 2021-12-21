@@ -8,6 +8,7 @@ import skins from "./plugins/skins.js";
 import middleware from "./plugins/middleware.js";
 
 import user_login from "./routes/user/login.js";
+import user_store from "./routes/user/store.js";
 
 dotenv.config();
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -34,6 +35,7 @@ app.register(skins);
 app.register(middleware);
 
 app.register(user_login);
+app.register(user_store);
 
 app.register(_static, {
   root: path.join(__dirname, "../assets"),

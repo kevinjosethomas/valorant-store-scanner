@@ -8,7 +8,7 @@ async function skins(fastify) {
     },
   });
   fastify.skins = skindata.data.skins;
-  fastify.skinlevels = skindata.data.skinLevels;
+  fastify.skinLevels = skindata.data.skinLevels;
 }
 
 export default plugin(skins);
