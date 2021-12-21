@@ -1,42 +1,38 @@
 import axios from "axios";
 import { useState } from "react";
 
-export default function Form() {
+import { Login, GetStorefront } from "api/user";
+
+type FormProps = {
+  setStore: (store: any) => void;
+  setCreds: (store: any) => void;
+};
+
+export default function Form(props: FormProps) {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
   async function login() {
-    const session = await axios.post(
-      `${process.env.NEXT_PUBLIC_RIOT_AUTH_URL}/api/v1/authorization`,
-      {
-        nonce: "1",
-        client_id: "play-valorant-web-prod",
-        redirect_uri: "https://playvalorant.com/opt_in",
-        response_type: "token id_token",
-      }
+    const [login, loginError] = await Login(username, password);
+
+    if (loginError) {
+      return;
+    }
+
+    props.setCreds(login.payload);
+
+    const [store, storeError] = await GetStorefront(
+      login.payload.id,
+      login.payload.access_token,
+      login.payload.entitlement_token,
+      "na"
     );
 
-    const cookies = session?.headers["set-cookie"]?.join("; ") as string;
+    if (storeError) {
+      return;
+    }
 
-    const auth = await axios.put(
-      `${process.env.NEXT_PUBLIC_RIOT_AUTH_URL}/api/v1/authorization`,
-      {
-        type: "auth",
-        username,
-        password,
-      },
-      {
-        headers: {
-          Cookie: cookies,
-        },
-      }
-    );
-
-    const access_token = auth.data.response.parameters.uri.match(
-      /access_token=((?:[a-zA-Z]|\d|\.|-|_)*).*id_token=((?:[a-zA-Z]|\d|\.|-|_)*).*expires_in=(\d*)/
-    )[1];
-
-    console.log(access_token);
+    props.setStore(store.payload);
   }
 
   return (
@@ -45,7 +41,9 @@ export default function Form() {
         <p className="font-bold text-4xl tracking-tight">Sign In</p>
         <div className="flex flex-col items-start justify-start space-y-3">
           <div className="flex flex-col items-start justify-start p-4 space-y-1 bg-black bg-opacity-5 rounded">
-            <p className="font-bold text-lg text-black text-opacity-40 leading-snug">USERNAME</p>
+            <p className="font-bold text-lg text-black text-opacity-40 leading-snug select-none">
+              USERNAME
+            </p>
             <input
               value={username}
               onChange={(e) => setUsername(e.target.value)}
@@ -53,7 +51,9 @@ export default function Form() {
             />
           </div>
           <div className="flex flex-col items-start justify-start p-4 space-y-1 bg-black bg-opacity-5 rounded">
-            <p className="font-bold text-lg text-black text-opacity-40 leading-snug">PASSWORD</p>
+            <p className="font-bold text-lg text-black text-opacity-40 leading-snug select-none">
+              PASSWORD
+            </p>
             <input
               type="password"
               value={password}
