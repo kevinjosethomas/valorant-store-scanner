@@ -38,14 +38,12 @@ export default async function router(fastify) {
     const skins = [];
 
     for (const skin of store.data.SkinsPanelLayout.SingleItemOffers) {
-      const skinLevel = fastify.skinLevels.find(
-        (skinned) => skinned.id.toLowerCase() === skin.toLowerCase()
-      );
-      const formattedSkin = fastify.skins.find((skinned) =>
-        skinLevel.name.toLowerCase().includes(skinned.name.toLowerCase())
+      const skinLevel = fastify.skinLevels.find((s) => s.id.toLowerCase() === skin.toLowerCase());
+      const foundSkin = fastify.skins.find(
+        (s) => s.name.toLowerCase() === skinLevel.name.toLowerCase()
       );
 
-      skins.push({ id: formattedSkin.id, name: formattedSkin.name });
+      skins.push(foundSkin);
     }
 
     return res.code(200).send({
