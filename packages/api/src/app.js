@@ -4,7 +4,6 @@ import { fileURLToPath } from "url";
 import _static from "fastify-static";
 import path, { dirname } from "path";
 
-import skins from "./plugins/skins.js";
 import middleware from "./plugins/middleware.js";
 
 import user_login from "./routes/user/login.js";
@@ -31,7 +30,6 @@ app.setErrorHandler((error, req, res) => {
   });
 });
 
-app.register(skins);
 app.register(middleware);
 
 app.register(user_login);
