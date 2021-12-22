@@ -11,6 +11,15 @@
   src: url("/fonts/VALORANT.ttf");
 }
 
+@font-face {
+  font-family: "DIN";
+  src: url("/fonts/DIN.ttf");
+}
+
+.font-valorant {
+  font-family: "VALORANT", sans-serif;
+}
+
 .root {
   background: url("/backgrounds/1.png") center/cover;
 }
