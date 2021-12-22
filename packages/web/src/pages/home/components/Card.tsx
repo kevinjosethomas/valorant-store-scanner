@@ -9,7 +9,7 @@ function Card(props: CardProps): JSX.Element {
       <div className="skincard-inside flex items-center justify-center w-full h-full overflow-visible">
         <img
           alt={props.name}
-          className="absolute min-w-fit h-24 rotate-45"
+          className="absolute max-w-fit max-h-24 rotate-45"
           src={`${process.env.NEXT_PUBLIC_API_URL}/public/skins/${props.id}.png`}
         />
       </div>
