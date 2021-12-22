@@ -18,3 +18,45 @@
 .font-valorant {
   font-family: "VALORANT", sans-serif;
 }
+
+.skincard-outside:before,
+.skincard-outside:after,
+.skincard-inside:before,
+.skincard-inside:after {
+  content: "";
+  position: absolute;
+  height: 50px;
+  width: 50px;
+}
+.skincard-outside:before {
+  top: -3px;
+  left: -3px;
+
+  border-left: 3px solid white;
+  border-top: 3px solid white;
+  border-top-left-radius: 1rem;
+}
+.skincard-outside:after {
+  top: -3px;
+  right: -3px;
+
+  border-right: 3px solid white;
+  border-top: 3px solid white;
+  border-top-right-radius: 1rem;
+}
+.skincard-inside:before {
+  bottom: -3px;
+  left: -3px;
+
+  border-left: 3px solid white;
+  border-bottom: 3px solid white;
+  border-bottom-left-radius: 1rem;
+}
+.skincard-inside:after {
+  bottom: -3px;
+  right: -3px;
+
+  border-right: 3px solid white;
+  border-bottom: 3px solid white;
+  border-bottom-right-radius: 1rem;
+}
