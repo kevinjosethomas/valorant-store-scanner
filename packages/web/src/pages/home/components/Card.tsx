@@ -9,8 +9,15 @@ function Card(props: CardProps): JSX.Element {
       <div className="skincard-inside flex items-center justify-center w-full h-full overflow-visible">
         <img
           alt={props.name}
-          className="absolute max-w-fit max-h-24 rotate-45"
+          draggable="false"
+          className="absolute z-10 max-w-[24rem] max-h-[7rem] rotate-[35deg]"
           src={`${process.env.NEXT_PUBLIC_API_URL}/public/skins/${props.id}.png`}
+        />
+        <img
+          alt="Background"
+          draggable="false"
+          src="/icons/arrows.png"
+          className="absolute opacity-70 z-0 h-48"
         />
       </div>
     </div>

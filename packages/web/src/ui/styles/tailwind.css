@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  font-family: "DM Sans", sans-serif;
+  font-family: "Readex Pro", sans-serif;
 }
 
 @font-face {
@@ -12,11 +12,7 @@
 }
 
 .root {
-  background: url("/backgrounds/1.jpg") center/cover;
-}
-
-.font-valorant {
-  font-family: "VALORANT", sans-serif;
+  background: url("/backgrounds/1.png") center/cover;
 }
 
 .skincard-outside:before,
