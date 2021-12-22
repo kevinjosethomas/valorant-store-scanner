@@ -23,19 +23,41 @@
   { "id": "C38DCED0-454D-D296-522E-6F8643DECD3B", "name": "Avalanche Phantom", "tier": "deluxe" },
   { "id": "A0938D46-4593-19B4-1AA5-F3B32ECB9963", "name": "Avalanche Spectre", "tier": "deluxe" },
   { "id": "41B55C92-4AEB-9C86-854A-4ABCD48EA0BA", "name": "Avalanche Vandal", "tier": "deluxe" },
-  { "id": "79005812-4D5C-CC6D-E2BD-19BC86C29349", "name": "BlastX Frenzy", "tier": "exclusive" },
-  { "id": "85ED3F9D-4E59-A709-8FAF-BC86EFFB3A07", "name": "BlastX Odin", "tier": "exclusive" },
-  { "id": "59AF9C5D-43EE-1360-F3A7-A9A6FF6E478B", "name": "BlastX Phantom", "tier": "exclusive" },
+  {
+    "id": "79005812-4D5C-CC6D-E2BD-19BC86C29349",
+    "name": "BlastX Frenzy",
+    "tier": "exclusive",
+    "price": 2175
+  },
+  {
+    "id": "85ED3F9D-4E59-A709-8FAF-BC86EFFB3A07",
+    "name": "BlastX Odin",
+    "tier": "exclusive",
+    "price": 2175
+  },
+  {
+    "id": "59AF9C5D-43EE-1360-F3A7-A9A6FF6E478B",
+    "name": "BlastX Phantom",
+    "tier": "exclusive",
+    "price": 2175
+  },
   {
     "id": "5844CCD5-4A8D-E84D-B5B1-DFAAA8F34D84",
     "name": "BlastX Polymer KnifeTech Coated Knife",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 4350
   },
-  { "id": "B4E5BB69-4E12-113F-C43B-EFA5B13CB96D", "name": "BlastX Spectre", "tier": "exclusive" },
+  {
+    "id": "B4E5BB69-4E12-113F-C43B-EFA5B13CB96D",
+    "name": "BlastX Spectre",
+    "tier": "exclusive",
+    "price": 2175
+  },
   {
     "id": "B1E9530D-4618-4F2E-1B75-F1A90C91B19E",
     "name": "Broken Blade of the Ruined King",
-    "tier": null
+    "tier": "exclusive",
+    "price": 4350
   },
   { "id": "8E760310-4D95-354B-A910-049EAA4D2FC6", "name": "Catrina", "tier": "deluxe" },
   { "id": "E6EEFED6-4D10-5794-4859-6D9AB5FF1D66", "name": "Cavalier Bucky", "tier": null },
@@ -51,12 +73,14 @@
   {
     "id": "1EA64C8D-43C4-FCE8-7354-01BDD6C0EE17",
     "name": "Champions 2021 Karambit",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 5350
   },
   {
     "id": "9BF19B77-4B33-7203-9F2C-16932970622F",
     "name": "Champions 2021 Vandal",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2675
   },
   { "id": "F580899D-49C4-8BF8-9718-C9A6A38DD503", "name": "Convex Bulldog", "tier": "select" },
   { "id": "03751FA0-46DB-0DF3-B8CB-99ADF373ECDA", "name": "Convex Judge", "tier": "select" },
@@ -110,32 +134,66 @@
   { "id": "90E750E8-4A42-F5FC-9160-3EA5E5522C6E", "name": "Genesis Bulldog", "tier": null },
   { "id": "DE8D2FF4-49E0-C0A9-D29B-2DA688220A01", "name": "Genesis Operator", "tier": null },
   { "id": "FCB18A37-4A0D-ECD3-EE2C-C38496ED5AE2", "name": "Genesis Shorty", "tier": null },
-  { "id": "F0C42E14-4A92-132D-DFD4-CBBEF103340C", "name": "Glitchpop Axe", "tier": "exclusive" },
+  {
+    "id": "F0C42E14-4A92-132D-DFD4-CBBEF103340C",
+    "name": "Glitchpop Axe",
+    "tier": "exclusive",
+    "price": 4350
+  },
   {
     "id": "285C6731-4451-B930-7A3D-C5A736D00F5E",
     "name": "Glitchpop Bulldog",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "8B2598EB-4DB9-6338-4A25-C780402C780E",
     "name": "Glitchpop Classic",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
-  { "id": "DDC025B2-475F-889A-2800-80B4215582BC", "name": "Glitchpop Dagger", "tier": "exclusive" },
-  { "id": "5596D764-4B62-210B-59DB-7982E9D4C23F", "name": "Glitchpop Frenzy", "tier": "exclusive" },
-  { "id": "28A659A4-439E-FCD0-6236-D39979EE5C51", "name": "Glitchpop Judge", "tier": "exclusive" },
-  { "id": "97AF88E4-4176-9FA3-4A26-57919443DAB7", "name": "Glitchpop Odin", "tier": "exclusive" },
+  {
+    "id": "DDC025B2-475F-889A-2800-80B4215582BC",
+    "name": "Glitchpop Dagger",
+    "tier": "exclusive",
+    "price": 4350
+  },
+  {
+    "id": "5596D764-4B62-210B-59DB-7982E9D4C23F",
+    "name": "Glitchpop Frenzy",
+    "tier": "exclusive",
+    "price": 2175
+  },
+  {
+    "id": "28A659A4-439E-FCD0-6236-D39979EE5C51",
+    "name": "Glitchpop Judge",
+    "tier": "exclusive",
+    "price": 2175
+  },
+  {
+    "id": "97AF88E4-4176-9FA3-4A26-57919443DAB7",
+    "name": "Glitchpop Odin",
+    "tier": "exclusive",
+    "price": 2175
+  },
   {
     "id": "A491B943-43E3-4E98-64A6-FC87FCA43605",
     "name": "Glitchpop Operator",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "25A7F0F2-4BCE-7E45-B4B0-CA9264F5DFCC",
     "name": "Glitchpop Phantom",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
-  { "id": "74789F33-4632-8052-96D7-258538721A32", "name": "Glitchpop Vandal", "tier": "exclusive" },
+  {
+    "id": "74789F33-4632-8052-96D7-258538721A32",
+    "name": "Glitchpop Vandal",
+    "tier": "exclusive",
+    "price": 2175
+  },
   { "id": "9D2B497B-434D-07FC-EA0F-EE96DE4BFFA1", "name": "Goldwing Ares", "tier": null },
   { "id": "1180C78D-4B0D-491E-EFDC-CFA5D948FA27", "name": "Goldwing Classic", "tier": null },
   { "id": "44BE88B3-4A0E-64C8-950D-66A969E71F7E", "name": "Goldwing Ghost", "tier": null },
@@ -371,52 +429,70 @@
   { "id": "41FCE834-4C76-A0F4-2CF8-CCA3AE879EAB", "name": "Red Alert Classic", "tier": null },
   { "id": "33AAA643-4BC4-4C5F-2762-228C7FC03949", "name": "Red Alert Operator", "tier": null },
   { "id": "0CF70376-4150-39AA-5657-8890617BC0D1", "name": "Red Alert Stinger", "tier": null },
-  { "id": "6FD8CC46-48B3-F02C-46E3-CBA372E7A328", "name": "Relic of the Sentinel", "tier": null },
+  {
+    "id": "6FD8CC46-48B3-F02C-46E3-CBA372E7A328",
+    "name": "Relic of the Sentinel",
+    "tier": "exclusive",
+    "price": 4350
+  },
   {
     "id": "9FB366B6-46DF-A722-0CF2-9C9B85936F17",
     "name": "RGX 11z Pro Blade",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 4350
   },
   {
     "id": "D5EA8AE9-4055-9B65-1F39-ED97372D887A",
     "name": "RGX 11z Pro Frenzy",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "DA29CE1E-43BB-C043-9CBC-34850517DC23",
     "name": "RGX 11z Pro Guardian",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "282C15E6-4372-2F18-9143-2D9CDD942C4C",
     "name": "RGX 11z Pro Stinger",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "E5490F71-455B-74AD-F762-F5A876D4DFF9",
     "name": "RGX 11z Pro Vandal",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   { "id": "9C350EBE-458B-E6ED-AB77-2FB00CF249C1", "name": "Ruin Dagger", "tier": null },
   { "id": "453A734B-4F14-9183-2BE8-97B01F603368", "name": "Ruin Guardian", "tier": null },
   { "id": "027A5D7F-4BFC-7C41-A012-24B8C6720FDA", "name": "Ruin Marshal", "tier": null },
   { "id": "1064FBD1-416C-BF00-0E30-A282A359847F", "name": "Ruin Shorty", "tier": null },
   { "id": "948D31A0-4C2A-9C82-2B89-FE9F2EC65036", "name": "Ruin Vandal", "tier": null },
-  { "id": "8A513C24-4C4D-AC15-6066-A1B2FF577041", "name": "Ruination Ghost", "tier": "exclusive" },
+  {
+    "id": "8A513C24-4C4D-AC15-6066-A1B2FF577041",
+    "name": "Ruination Ghost",
+    "tier": "exclusive",
+    "price": 2175
+  },
   {
     "id": "8966067D-4023-C88A-DB56-2691F163D335",
     "name": "Ruination Guardian",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "5B43D27B-419C-F2BC-53FE-D7829DAD46B3",
     "name": "Ruination Phantom",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "F9C2E823-4EEB-D872-8A4C-D5A0BF8A3B6C",
     "name": "Ruination Spectre",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   { "id": "4E04647A-4CFC-64F8-4643-F6B7DBCB2943", "name": "Rush Ares", "tier": "select" },
   { "id": "23399BEB-4828-0D03-AE24-AAA62B08F796", "name": "Rush Bulldog", "tier": "select" },
@@ -436,22 +512,26 @@
   {
     "id": "9F3E2BA6-428F-C635-67E0-B8B7D9E3C2FC",
     "name": "Sentinels of Light Ares",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "B05C4C98-4108-E442-ADD7-DA99A95A37B6",
     "name": "Sentinels of Light Operator",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "2BA3DED8-47D5-58E3-1307-39800214636D",
     "name": "Sentinels of Light Sheriff",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "E8DF3725-40DE-B8EC-77BD-62A989685A85",
     "name": "Sentinels of Light Vandal",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   { "id": "D8314B6C-45FC-FBDA-A797-569A24C11BB9", "name": "Serenity Ghost", "tier": null },
   { "id": "3A1C857A-4671-0667-8EFE-EE90B8BA1E5A", "name": "Serenity Judge", "tier": null },
@@ -462,26 +542,35 @@
   { "id": "721AB58C-4BA2-B7AE-C571-0993D9799FC5", "name": "Silvanus Sheriff", "tier": "deluxe" },
   { "id": "847FE9DA-45CC-21D4-0138-7AA4D8B31D8E", "name": "Silvanus Stinger", "tier": "deluxe" },
   { "id": "D758ABC0-4D99-62D3-B22B-0DB0E57DE881", "name": "Silvanus Vandal", "tier": "deluxe" },
-  { "id": "E901BDEB-405F-D06C-0733-6783274D85B0", "name": "Singularity Ares", "tier": "exclusive" },
+  {
+    "id": "E901BDEB-405F-D06C-0733-6783274D85B0",
+    "name": "Singularity Ares",
+    "tier": "exclusive",
+    "price": 2175
+  },
   {
     "id": "151EE26C-4E82-E7CA-DAD1-099E7FB34774",
     "name": "Singularity Knife",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 4350
   },
   {
     "id": "5EEC4CE6-443D-E9B5-4C5B-2B967D426BD3",
     "name": "Singularity Phantom",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "BFD9E773-4376-1F6A-98F2-DC93F0C0607C",
     "name": "Singularity Sheriff",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   {
     "id": "0EAB3E5C-4DE4-E221-34FB-2AB435C89EB6",
     "name": "Singularity Spectre",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2175
   },
   { "id": "22FDC42D-4AD6-2BEC-8033-8A8BDF178826", "name": "Smite Classic", "tier": "select" },
   { "id": "5324BC65-44AA-1A16-EDE4-0E9B56F35D0E", "name": "Smite Judge", "tier": "select" },
@@ -504,14 +593,30 @@
   { "id": "5211EFA8-4EFD-09BB-6CEE-72B86A8A5972", "name": "Sovereign Marshal", "tier": "premium" },
   { "id": "8FB27BB1-4080-581D-BCD3-53AE01861654", "name": "Sovereign Stinger", "tier": "premium" },
   { "id": "2E77AC95-4681-3D87-BBDC-93A50FF6B1F6", "name": "Sovereign Sword", "tier": "premium" },
-  { "id": "FBE04552-445F-F202-923E-6FBD61B7E2AA", "name": "Spectrum Bulldog", "tier": "exclusive" },
-  { "id": "46F32F75-4FC8-7121-8A77-DB8DB43AFC67", "name": "Spectrum Classic", "tier": "exclusive" },
+  {
+    "id": "FBE04552-445F-F202-923E-6FBD61B7E2AA",
+    "name": "Spectrum Bulldog",
+    "tier": "exclusive",
+    "price": 2675
+  },
+  {
+    "id": "46F32F75-4FC8-7121-8A77-DB8DB43AFC67",
+    "name": "Spectrum Classic",
+    "tier": "exclusive",
+    "price": 2675
+  },
   {
     "id": "04CCFE05-497C-2D52-2BD0-64A68955175E",
     "name": "Spectrum Guardian",
-    "tier": "exclusive"
+    "tier": "exclusive",
+    "price": 2675
   },
-  { "id": "980FA063-436E-E51F-C38D-70A5B93A0F1C", "name": "Spectrum Phantom", "tier": "exclusive" },
+  {
+    "id": "980FA063-436E-E51F-C38D-70A5B93A0F1C",
+    "name": "Spectrum Phantom",
+    "tier": "exclusive",
+    "price": 2675
+  },
   { "id": "5BB5ACB1-44DD-184B-484E-319188EF78EB", "name": "Spitfire Frenzy", "tier": null },
   { "id": "750D4F04-4FEA-391B-FA8B-539815A63164", "name": "Spline Classic", "tier": "premium" },
   { "id": "F6CFD500-4EAB-3C1D-9EEB-188E90731692", "name": "Spline Dagger", "tier": "premium" },
@@ -598,7 +703,12 @@
   { "id": "30635237-4877-4EA4-5AC4-239474D3A662", "name": "Wasteland Shorty", "tier": "deluxe" },
   { "id": "F7DA43D8-450B-A03F-CEB7-C4B20F738392", "name": "Wasteland Spectre", "tier": "deluxe" },
   { "id": "32B87592-45AD-C5A6-44AE-A9B844137C58", "name": "Wasteland Vandal", "tier": "deluxe" },
-  { "id": "400BB847-4F4F-A39E-CD52-589F00B2204F", "name": "Waveform", "tier": "exclusive" },
+  {
+    "id": "400BB847-4F4F-A39E-CD52-589F00B2204F",
+    "name": "Waveform",
+    "tier": "exclusive",
+    "price": 5350
+  },
   {
     "id": "E49C0FD2-435C-2C41-9164-4996080F455B",
     "name": "Winterwunderland Candy Cane",
