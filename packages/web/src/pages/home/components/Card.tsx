@@ -33,7 +33,7 @@ function Card(props: CardProps): JSX.Element {
 
   return (
     <div
-      className={`skincard-outside relative flex flex-col items-start justify-between w-96 h-48 p-3 border-[3px] border-white border-opacity-50 rounded-2xl bg-gradient-to-tr transform hover:scale-[1.02] ${background} transition duration-500 select-none`}
+      className={`skincard-outside relative flex flex-col items-start justify-between w-96 h-48 p-3 border-[3px] border-white border-opacity-50 rounded-2xl bg-gradient-to-tr transform hover:scale-[1.01] ${background} transition duration-500 select-none`}
     >
       <img
         src={`/icons/${props.tier}.png`}
