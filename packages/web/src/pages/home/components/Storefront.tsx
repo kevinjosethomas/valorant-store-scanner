@@ -61,7 +61,7 @@ function Storefront(props: StorefrontProps): JSX.Element {
         </div>
         <div className="grid grid-cols-4 w-full">
           {props.store.skins.map((skin: Record<string, string>, index: Key) => (
-            <Card key={index} id={skin.id} name={skin.name} />
+            <Card key={index} id={skin.id} name={skin.name} tier={skin.tier} price={skin.price} />
           ))}
         </div>
       </div>
