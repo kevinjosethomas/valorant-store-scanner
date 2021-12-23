@@ -6,7 +6,7 @@ type FormProps = {
   setStore: (store: any) => void;
 };
 
-export default function Form(props: FormProps) {
+export default function Form(props: FormProps): JSX.Element {
   const passRef = useRef<HTMLInputElement>(null);
 
   const [seePass, setSeePass] = useState(false);
