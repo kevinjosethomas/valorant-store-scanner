@@ -15,7 +15,7 @@ export default function Form(props: FormProps): JSX.Element {
 
   useEffect(() => {
     if (!passRef.current) return;
-    if (passRef.current.type === "password") {
+    if (seePass) {
       passRef.current.type = "input";
     } else {
       passRef.current.type = "password";
@@ -73,7 +73,7 @@ export default function Form(props: FormProps): JSX.Element {
             </div>
             <i
               className={`far ${
-                seePass ? "fa-eye" : "fa-eye-slash"
+                seePass ? "fa-eye-slash" : "fa-eye"
               } w-[30px] text-2xl cursor-pointer`}
               onClick={() => setSeePass((s) => !s)}
             />
