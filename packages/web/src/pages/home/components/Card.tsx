@@ -11,7 +11,7 @@ function Card(props: CardProps): JSX.Element {
         <img
           alt={props.name}
           draggable="false"
-          className="absolute z-10 max-w-[24rem] max-h-[7rem] rotate-[35deg]"
+          className="gunskin absolute z-10 max-w-[24rem] max-h-[7rem] rotate-[35deg]"
           src={`${process.env.NEXT_PUBLIC_API_URL}/public/skins/${props.id}.png`}
         />
         <img
