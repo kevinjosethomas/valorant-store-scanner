@@ -45,20 +45,20 @@ export default function Form(props: FormProps): JSX.Element {
 
   return (
     <div className="flex flex-col items-start justify-start space-y-4">
-      <div className="flex flex-col items-center justify-start px-8 py-14 space-y-6 bg-white">
+      <div className="flex flex-col items-center justify-start px-4 md:px-8 py-6 md:py-14 space-y-6 bg-white">
         <p className="font-bold text-4xl tracking-tight">Sign In</p>
         <div className="flex flex-col items-start justify-start space-y-3">
-          <div className="flex flex-col items-start justify-start py-4 px-6 bg-black bg-opacity-5 rounded">
+          <div className="flex flex-col items-start justify-start w-72 md:w-full py-2 md:py-4 px-3 md:px-6 bg-black bg-opacity-5 rounded">
             <p className="font-medium text-lg text-black text-opacity-40 tracking-tight leading-snug select-none">
               USERNAME
             </p>
             <input
               value={username}
               onChange={(e) => setUsername(e.target.value)}
-              className="w-96 font-medium text-xl text-black text-opacity-80 bg-transparent focus:outline-none"
+              className="w-full md:w-96 font-medium text-xl text-black text-opacity-80 bg-transparent focus:outline-none"
             />
           </div>
-          <div className="flex flex-row items-center justify-start w-full py-4 px-6 bg-black bg-opacity-5 rounded">
+          <div className="flex flex-row items-center justify-start w-72 md:w-full py-4 px-6 bg-black bg-opacity-5 rounded">
             <div className="flex flex-col items-start justify-between w-full">
               <p className="font-medium text-lg text-black text-opacity-40 tracking-tight leading-snug select-none">
                 PASSWORD
