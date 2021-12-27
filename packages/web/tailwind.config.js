@@ -39,6 +39,9 @@ module.exports = {
           xe2: "#875e4c",
         },
       },
+      screens: {
+        "3xl": "1920px",
+      },
     },
   },
   variants: {},

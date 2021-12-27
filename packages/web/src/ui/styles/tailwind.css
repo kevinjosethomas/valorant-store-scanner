@@ -11,17 +11,17 @@
   src: url("/fonts/VALORANT.ttf");
 }
 
-@font-face {
-  font-family: "DIN";
-  src: url("/fonts/DIN.ttf");
-}
-
 .font-valorant {
   font-family: "VALORANT", sans-serif;
 }
 
-.root {
+.bg-1 {
   background: url("/backgrounds/1.png") center/cover;
+  background-repeat: repeat-y;
+}
+
+.bg-2 {
+  background: url("/backgrounds/2.jpg") center/cover;
 }
 
 .skincard-outside:before,

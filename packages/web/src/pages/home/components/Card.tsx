@@ -33,7 +33,7 @@ function Card(props: CardProps): JSX.Element {
 
   return (
     <div
-      className={`skincard-outside relative flex flex-col items-start justify-between w-96 h-48 p-3 border-[3px] border-white border-opacity-50 rounded-2xl bg-gradient-to-tr transform hover:scale-[1.01] ${background} transition duration-500 select-none`}
+      className={`skincard-outside relative flex flex-col items-start justify-between w-full md:w-96 h-40 md:h-48 p-3 border-[3px] border-white border-opacity-50 rounded-2xl bg-gradient-to-tr transform hover:scale-[1.01] ${background} transition duration-500 select-none`}
     >
       <img
         src={`/icons/${props.tier}.png`}
@@ -45,17 +45,17 @@ function Card(props: CardProps): JSX.Element {
         <img
           alt={props.name}
           draggable="false"
-          className="gunskin absolute z-10 max-w-[24rem] max-h-[7rem] rotate-[35deg]"
+          className="gunskin absolute z-10 max-w-[18rem] md:max-w-[24rem] max-h-[6rem] md:max-h-[7rem] rotate-[35deg]"
           src={`${process.env.NEXT_PUBLIC_API_URL}/public/skins/${props.id}.png`}
         />
         <img
           alt="Background"
           draggable="false"
           src="/icons/arrows.png"
-          className="absolute opacity-70 z-0 h-48"
+          className="absolute opacity-70 z-0 h-40 md:h-48"
         />
       </div>
-      <p className="max-w-[130px] font-normal text-white text-opacity-90 uppercase select-none">
+      <p className="max-w-[130px] font-normal text-white text-sm md:text-base text-opacity-90 uppercase leading-tight select-none">
         {props.name}
       </p>
       <div className="absolute flex items-center justify-start -top-11 right-0 space-x-1">
