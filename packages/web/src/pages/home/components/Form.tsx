@@ -80,7 +80,7 @@ export default function Form(props: FormProps): JSX.Element {
       login.payload.id,
       login.payload.access_token,
       login.payload.entitlement_token,
-      "na"
+      region.id
     );
 
     if (storeError) {
