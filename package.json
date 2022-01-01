@@ -8,7 +8,8 @@
   ],
   "scripts": {
     "dev:a": "yarn workspace api dev",
-    "dev:w": "yarn workspace web dev"
+    "dev:w": "yarn workspace web dev",
+    "start:a": "yarn workspace api start"
   },
   "description": "📦 Access your VALORANT store without launching your game!",
   "repository": "https://github.com/trustedmercury/valorant-store-scanner.git",
