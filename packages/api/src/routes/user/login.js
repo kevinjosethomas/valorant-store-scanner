@@ -1,4 +1,5 @@
 import axios from "axios";
+import https from "https";
 
 const UserLoginSchema = {
   body: {
@@ -90,12 +91,24 @@ export default async function router(fastify) {
 
 const CreateLoginSession = async () => {
   try {
-    const response = await axios.post(`${process.env.RIOT_AUTH_URL}/api/v1/authorization`, {
-      nonce: "1",
-      client_id: "play-valorant-web-prod",
-      redirect_uri: "https://playvalorant.com/opt_in",
-      response_type: "token id_token",
-    });
+    const response = await axios.post(
+      `${process.env.RIOT_AUTH_URL}/api/v1/authorization`,
+      {
+        nonce: "1",
+        client_id: "play-valorant-web-prod",
+        redirect_uri: "https://playvalorant.com/opt_in",
+        response_type: "token id_token",
+      },
+      {
+        headers: {
+          "User-Agent":
+            "RiotClient/43.0.1.4195386.4190634 rso-auth (Windows;10;;Professional, x64)",
+        },
+        httpsAgent: new https.Agent({
+          ciphers: "TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384",
+        }),
+      }
+    );
 
     return [response, null];
   } catch (e) {
@@ -115,7 +128,14 @@ const Login = async (username, password, cookies) => {
       {
         headers: {
           Cookie: cookies,
+          headers: {
+            "User-Agent":
+              "RiotClient/43.0.1.4195386.4190634 rso-auth (Windows;10;;Professional, x64)",
+          },
         },
+        httpsAgent: new https.Agent({
+          ciphers: "TLS_CHACHA20_POLY1305_SHA256:TLS_AES_128_GCM_SHA256:TLS_AES_256_GCM_SHA384",
+        }),
       }
     );
 
