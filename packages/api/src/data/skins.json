@@ -390,6 +390,32 @@
   { "id": "F4E40444-43F3-E6F7-3271-BDB7D1492B05", "name": "Prosperity", "tier": "premium" },
   { "id": "4F1FDE01-4130-0AE7-1320-6FB2F2FB6AB9", "name": "Protektor Sheriff", "tier": null },
   {
+    "id": "84589DA8-4E2B-11BF-CA52-B88E6B7E1DBD",
+    "name": "Protocol 781-A Sheriff",
+    "tier": "ultra"
+  },
+  {
+    "id": "EAA73AB9-4688-0C40-09AD-85B535A50723",
+    "name": "Protocol 781-A Spectre",
+    "tier": "ultra"
+  },
+  {
+    "id": "1DAEFBFF-4581-AEF3-5ED6-DA894D7E4CC7",
+    "name": "Protocol 781-A Bulldog",
+    "tier": "ultra"
+  },
+  {
+    "id": "9877D50B-43B1-837A-802A-BF8A3B98E2DD",
+    "name": "Protocol 781-A Phantom",
+    "tier": "ultra"
+  },
+  {
+    "id": "239ED20B-479C-E08E-C4B5-6BA0394576D4",
+    "name": "Personal Administrative Melee Unit",
+    "tier": "ultra",
+    "price": 4950
+  },
+  {
     "id": "71020826-483D-34F8-8DA7-928F87942C10",
     "name": "Radiant Crisis 001 Baseball Bat",
     "tier": "premium"
@@ -647,6 +673,32 @@
     "id": "F2B034E0-4B54-5ABC-25C8-D293B6F1D247",
     "name": "Tethered Realms Vandal",
     "tier": "premium"
+  },
+  {
+    "id": "E0CF9566-452C-1501-43B1-778E69C60DBF",
+    "name": "Tigris Phantom",
+    "tier": "deluxe"
+  },
+  {
+    "id": "7B51FC8A-4A5C-712E-C663-E6A7EEB61D91",
+    "name": "Tigris Shorty",
+    "tier": "deluxe"
+  },
+  {
+    "id": "B53A990D-45C2-6212-A98F-B0AA5D6E6C23",
+    "name": "Tigris Operator",
+    "tier": "deluxe"
+  },
+  {
+    "id": "910991B7-40DE-183D-12EA-D99E67CFA910",
+    "name": "Tigris Spectre",
+    "tier": "deluxe"
+  },
+  {
+    "id": "5724CD18-458B-AF3D-B60A-239C5A8C081A",
+    "name": "Hu Else",
+    "tier": "deluxe",
+    "price": 2550
   },
   {
     "id": "3714831B-4B90-BB6B-4185-7FB05BA9B9A2",
