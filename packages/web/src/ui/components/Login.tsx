@@ -310,7 +310,7 @@ function SaveDetails(props: SaveDetailsProps): JSX.Element {
   return (
     <div
       className="flex items-center space-x-2 cursor-pointer"
-      onClick={() => props.setSaveDetails((x) => !x)}
+      onClick={() => props.setSaveDetails(!props.saveDetails)}
     >
       <div
         className={`flex items-center justify-center w-8 h-8 ${
